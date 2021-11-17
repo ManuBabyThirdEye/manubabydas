@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0px!important;
+    font-family: consolas_regular;
+}
+
+@font-face {
+    font-family: consolas_italic;
+    src: url(assets/Consolas.ttf);
+}
+
+@font-face {
+    font-family: consolas_regular;
+    src: url(assets/CONSOLA.TTF);
+}
+
+@font-face {
+    font-family: consolas_bold;
+    src: url(assets/CONSOLAB.TTF);
+}
+
+@font-face {
+    font-family: consolas_italic_bold;
+    src: url(assets/consolaz.ttf);
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+.carousel-indicators{
+    bottom: -45px!important;
+    li{
+        height: 7px!important;
+        width: 7px!important;
+        border-radius: 50%!important;
+    }
+}

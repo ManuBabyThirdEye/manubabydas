@@ -1,0 +1,197 @@
+.main-body{
+    background: rgba($color: #040d21, $alpha: 0.85);
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow-y: scroll;
+    background-image: url('../assets/hero-glow.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    .background{
+        margin-left: -128px;
+        position: fixed;
+        top: -500px;
+        left: -500px;
+    }
+    .star{
+        width: 10px;
+        left: 50px;
+        position: relative;
+        animation: star 30s 1;
+    }
+    .home{
+        display: flex;
+        .glass-circle{
+            width: 500px;
+            height: 500px;
+            background: rgba($color: #FFF, $alpha: 0.02);
+            box-shadow: 0px 0px 20px -6px #888888;
+            border-radius: 50%;
+            right: 150px;
+            top: 100px;
+            z-index: 10;
+            margin-left: 200px;
+            margin-top: 100px;
+            animation: glob-rotate 5s 1;
+            .glass-bk{
+                background: #040e26;
+                box-shadow: 0px 0px 20px -6px #888888;
+                display: flex;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+            }
+            .angular{
+                width: 50px;
+                height: 50px;
+                margin-left: 43%;
+                margin-top: -25px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .java{
+                width: 60px;
+                height: 60px;
+                margin-left: 84%;
+                margin-top: 40px;
+                img{
+                    width: 35px;
+                    height: 35px;
+                }
+            }
+            .spring{
+                margin-left: 10px;
+                margin-top: -50px;
+                width: 70px;
+                height: 70px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .android{
+                margin-left: 93%;
+                margin-top: 65px;
+                width: 70px;
+                height: 70px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .firebase{
+                margin-left: 0px;
+                margin-top: 40px;
+                width: 50px;
+                height: 50px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .flutter{
+                margin-left: 80%;
+                margin-top: 40px;
+                width: 50px;
+                height: 50px;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    
+        .my-details{
+            color: white;
+            padding-top:30vh;
+            margin-left: 150px;
+            .tech{
+                padding: 5px 10px;
+                font-size: 14px;
+                background: #3a1c42;
+                border-radius: 25px;
+                margin-bottom: 30px;
+                width: fit-content;
+                font-style: italic;
+            }
+            .name{
+                font-size: 80px;
+            }
+            .quote{
+                font-size: 14px;
+                color: #6a7cb3;
+                font-style: italic;
+            }
+        }
+    }
+
+    @keyframes star {
+        0%   { top: 100vh;}
+        100% { top: -100px; visibility: hidden;display: none;}
+    }
+    @keyframes glob-rotate {
+        0%  { transform: translate(500px,0px) rotate(145deg) ;}
+        100% {  transform: translate(0px,0px) rotate(0deg) ;}
+
+    }
+}
+
+.project{
+    display: flex;
+    .info-box{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        .info{
+            width: 450px;
+            background: rgba($color: #FFF, $alpha: 0.02);
+            box-shadow: 0px 0px 20px -6px #888888;
+            padding: 20px;
+            border-radius: 25px;
+            .name{
+                font-size: 30px;
+            }
+            .desc{
+                margin-top: 10px;
+                font-size: 14px;
+                color: #deab67;
+                font-style: italic;
+            }
+        }
+    }
+    
+    .screenshot{
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 50px;
+        height: 100vh;
+        display: flex;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+section{
+    color: white;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.running-text{
+    .blink-caret{
+        width: 2px;
+        height: 17px;
+        background: #deab67;
+        position: relative;
+    }
+}
+.code-bk{
+    background-image: url('../assets/code.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
